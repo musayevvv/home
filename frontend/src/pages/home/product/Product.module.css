@@ -1,0 +1,117 @@
+.productSection {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formBox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.formBox input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.formBox input:focus {
+    border-color: #007bff;
+}
+
+.formBox button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formBox button:hover {
+    background-color: #0056b3;
+}
+
+.productBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.productimage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.text p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text span {
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+}
+
+.btnBox button {
+    flex: 1;
+    padding: 8px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btnBox button:hover {
+    background-color: #e0a800;
+}
